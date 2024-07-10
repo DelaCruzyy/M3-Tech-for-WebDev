@@ -1,0 +1,57 @@
+#support-options {
+	background-color: #f7f7f7;
+	padding: 20px;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.support-options ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.support-options li {
+	margin-bottom: 20px;
+}
+
+.support-options h4 {
+	margin-top: 0;
+}
+
+.donate-button,.patron-button,.sponsor-button {
+	background-color: #4CAF50;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.donate-button:hover,.patron-button:hover,.sponsor-button:hover {
+	background-color: #3e8e41;
+}
+
+#rewards {
+	background-color: #f7f7f7;
+	padding: 20px;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	margin-top: 20px;
+}
+
+.rewards ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.rewards li {
+	margin-bottom: 20px;
+}
+
+.rewards h4 {
+	margin-top: 0;
+}
