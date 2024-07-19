@@ -10,8 +10,9 @@ body {
     background-image: url('Purple.avif');
     background-size: cover;
     background-attachment: fixed;
-    margin: 0;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 #nav-div {
@@ -22,16 +23,15 @@ body {
     min-height: 80px;
     background-color: #B868c8;
     text-align: center;
-    line-height: 50px;
-    margin-bottom: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
 }
-.nav-right{
+
+.nav-right {
     text-align: right;
     margin-left: 50px;
-
 }
 
 .nav-button {
@@ -50,23 +50,20 @@ body {
 
 #main-div {
     width: 100%;
-    min-height: 400px;
     text-align: center;
     margin-bottom: 100px;
-    font-size: 150%;
+    font-size: 1.5rem;
 }
 
 #sidebar-div {
     width: 20%;
-    min-height: 1848px;
     background-color: hsl(288, 39%, 49%);
     float: left;
     text-align: left;
     padding: 10px;
-    margin-top:%;
-    display:flex;
-    flex-direction:column;
-    flex-grow:1;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .sidebar-links {
@@ -82,7 +79,7 @@ body {
 .sidebar-links a {
     color: aliceblue;
     text-decoration: none;
-    line-height: 1.5; 
+    line-height: 1.5;
 }
 
 .sidebar-links a:hover {
@@ -91,11 +88,9 @@ body {
 
 #bodyarea-div {
     width: 75%;
-    min-height: 400px;
     background-color: hsl(288, 39%, 49%);
     float: right;
     padding: 20px;
-    margin-bottom: 1%;
 }
 
 .clearfix::after {
@@ -112,14 +107,60 @@ body {
     min-height: 80px;
     background-color: #B868c8;
     text-align: center;
-    line-height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 150%;
+    font-size: 1.5rem;
 }
 
 .resize-image {
     width: 200px;
     height: auto;
+}
+
+@media (max-width: 1200px) {
+    #sidebar-div {
+        width: 25%;
+    }
+
+    #bodyarea-div {
+        width: 75%;
+    }
+}
+
+@media (max-width: 768px) {
+    #sidebar-div {
+        width: 100%;
+        min-height: auto;
+        float: none;
+    }
+
+    #bodyarea-div {
+        width: 100%;
+    }
+
+    #nav-div {
+        flex-direction: column;
+        line-height: 1.5;
+    }
+
+    .nav-right {
+        text-align: center;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    #main-div {
+        font-size: 1.2rem;
+    }
+
+    #footer-div {
+        font-size: 1.2rem;
+    }
 }
