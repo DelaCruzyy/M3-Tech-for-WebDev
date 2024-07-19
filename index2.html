@@ -13,28 +13,42 @@
             <a href="index.html" class="nav-link"><button class="nav-button">Home</button></a>
             <a href="index2.html" class="nav-link"><button class="nav-button">Contact us</button></a>
             <a href="index1.html" class="nav-link"><button class="nav-button">About Me</button></a>
-            </div>
+            <a href="index3.html" class="nav-link"><button class="nav-button">Support Us</button></a>
         </div>
         <div id="headerbanner-div"></div>
         <div id="main-div">
             <div id="bodyarea-div">
                 <h2>Contact Us</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vulputate eu scelerisque felis imperdiet proin. Nisi est sit amet facilisis magna etiam. Erat pellentesque adipiscing commodo elit at imperdiet dui accumsan. Pulvinar neque laoreet suspendisse interdum consectetur libero. Accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu. Tempor orci dapibus ultrices in iaculis nunc sed augue. Cras pulvinar mattis nunc sed. Rhoncus mattis rhoncus urna neque viverra justo nec. Nisi est sit amet facilisis magna etiam tempor orci eu. In fermentum et sollicitudin ac orci phasellus egestas tellus rutrum.</p>
-                <form>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name"><br><br>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email"><br><br>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message"></textarea><br><br>
-                    <input type="submit" value="Send">
-                </form>
+                <p>For any inquiries, feedback, or collaboration opportunities, please feel free to reach out to us. We value your input and strive to provide prompt responses to all messages. Whether you have questions about our services, suggestions for improvement, or would like to partner with us on a project, we are eager to hear from you. You can contact us via email at <a href="mailto:ilovejarel5@gmail.com">ilovejarel5@gmail.com</a> or by filling out the contact form below. We look forward to connecting with you and assisting in any way we can. Thank you for your interest in contacting us—we are here to help! Your feedback helps us grow and improve, and we appreciate your effort to get in touch.</p>
+                
+                <div class="container">
+                    <form target="_blank" action="https://formsubmit.co/ilovejarel5@gmail.com" method="POST" onsubmit="return showAlert()">
+                        <div class="form-group">
+                            <div class="form-row">
+                                <div class="col">
+                                    <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                                </div>
+                                <div class="col">
+                                    <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+                    </form>
+                </div>
+
+                <div class="gif-container">
+                    <img src="hololive.gif" data-gif="animated-image.gif" alt="Hover to animate" class="hover-gif">
+                </div>
             </div>
         </div>
         <div id="footer-div">
-            <p>Contact: therealh1h3@gmail.com | Web Developer: Boris M. Dela Cruz</p>
+            <p>Contact: ilovejarel5@gmail.com | Web Developer: Boris M. Dela Cruz</p>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="alert.js"></script>
 </body>
 </html>
