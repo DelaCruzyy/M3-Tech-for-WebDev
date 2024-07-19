@@ -14,6 +14,7 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
+    min-height: 100vh; 
 }
 
 #nav-div {
@@ -55,7 +56,7 @@ body {
     min-height: 400px;
     text-align: center;
     margin-bottom: 100px;
-    font-size: 150%;
+    font-size: 1.5rem; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,7 +70,6 @@ body {
     background-color: hsl(288, 39%, 49%);
     padding: 20px;
     margin-bottom: 1%;
-    padding-bottom: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,11 +77,6 @@ body {
     line-height: 1.6; 
 }
 
-.clearfix::after {
-    content: "";
-    display: block;
-    clear: both;
-}
 
 #footer-div {
     background-image: url('Logo.png');
@@ -95,10 +90,56 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 150%;
+    font-size: 1.5rem; 
+    position: static; 
+}
+
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .resize-image {
     width: 200px;
     height: auto;
+}
+
+
+@media (max-width: 1200px) {
+    #bodyarea-div {
+        width: 90%; 
+    }
+}
+
+@media (max-width: 768px) {
+    #bodyarea-div {
+        width: 100%;
+        padding: 10px; 
+    }
+
+    #main-div {
+        font-size: 1.2rem; 
+    }
+
+    .nav-right {
+        text-align: center;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    #main-div {
+        font-size: 1rem; 
+    }
+
+    #footer-div {
+        font-size: 1.2rem; 
+    }
 }
