@@ -80,26 +80,26 @@ body {
 }
 
 form {
-    display: inline-block; /* Ensures form elements are inline */
+    display: inline-block;
 }
 
 button[type="submit"] {
     background-color: hsl(288, 39%, 49%);
-    border: 2px solid #ffffff; /* White border */
+    border: 2px solid #ffffff;
     color: white;
     padding: 12px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 14px 0; /* Adjusted margin */
+    margin: 14px 0;
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 button[type="submit"]:hover {
-    background-color: #A258B0; /* Darker purple on hover */
+    background-color: #A258B0; 
 }
 
 #footer-div {
