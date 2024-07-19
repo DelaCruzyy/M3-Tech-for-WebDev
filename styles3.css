@@ -1,57 +1,119 @@
-#support-options {
-	background-color: #f7f7f7;
-	padding: 20px;
-	border: 1px solid #ddd;
-	border-radius: 10px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
 }
 
-.support-options ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
+body {
+    background-image: url('Purple.avif');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
 }
 
-.support-options li {
-	margin-bottom: 20px;
+#wrapper-div {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-.support-options h4 {
-	margin-top: 0;
+#nav-div {
+    background-image: url('Logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 80px;
+    background-color: #B868c8;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.donate-button,.patron-button,.sponsor-button {
-	background-color: #4CAF50;
-	color: #fff;
-	padding: 10px 20px;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
+.nav-link {
+    text-decoration: none;
 }
 
-.donate-button:hover,.patron-button:hover,.sponsor-button:hover {
-	background-color: #3e8e41;
+.nav-button {
+    background-color: hsl(288, 39%, 49%);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-#rewards {
-	background-color: #f7f7f7;
-	padding: 20px;
-	border: 1px solid #ddd;
-	border-radius: 10px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	margin-top: 20px;
+#main-div {
+    width: 100%;
+    min-height: 400px;
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 150%;
+    flex-grow: 1;
+    background-color: rgba(54, 57, 73, 0.8);
+    padding: 20px;
 }
 
-.rewards ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
+
+#bodyarea-div {
+    width: 75%;
+    min-height: 400px;
+    background-color: hsl(288, 39%, 49%);
+    float: right;
+    padding: 20px;
+    margin-bottom: 1%;
+    margin-right: 12%;
 }
 
-.rewards li {
-	margin-bottom: 20px;
+#donate-section {
+    margin-top: 20px;
 }
 
-.rewards h4 {
-	margin-top: 0;
+form {
+    display: inline-block; /* Ensures form elements are inline */
+}
+
+button[type="submit"] {
+    background-color: hsl(288, 39%, 49%);
+    border: 2px solid #ffffff; /* White border */
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 14px 0; /* Adjusted margin */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #A258B0; /* Darker purple on hover */
+}
+
+#footer-div {
+    background-image: url('Logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 80px;
+    background-color: #B868c8;
+    text-align: center;
+    line-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+    margin-top: auto;
 }
