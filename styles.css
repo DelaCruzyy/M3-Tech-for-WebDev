@@ -31,7 +31,7 @@ body {
 .nav-right{
     text-align: right;
     margin-left: 50px;
-    
+
 }
 
 .nav-button {
@@ -82,7 +82,7 @@ body {
 .sidebar-links a {
     color: aliceblue;
     text-decoration: none;
-    line-height: 1.5; /* Adjust line-height as needed */
+    line-height: 1.5; 
 }
 
 .sidebar-links a:hover {
@@ -120,6 +120,6 @@ body {
 }
 
 .resize-image {
-    width: 200px; 
-    height: auto; 
+    width: 200px;
+    height: auto;
 }
