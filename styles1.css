@@ -60,7 +60,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-    line-height: 1.6; /* Added line-height for better text spacing */
+    line-height: 1.6;
 }
 
 #bodyarea-div {
@@ -74,7 +74,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    line-height: 1.6; /* Added line-height for better text spacing */
+    line-height: 1.6; 
 }
 
 .clearfix::after {
